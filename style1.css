@@ -1,0 +1,247 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+html,body{
+    height:100%;
+    width:100%;
+    overflow-x: hidden;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+.header{
+   
+    height: 70%;
+    width:100%;
+    background-color: #FFCD9E;
+    display:flex;
+    justify-content: flex-start;
+     align-items: center; 
+    padding-left: 13%; 
+
+}
+.footer{
+    flex: 1;
+    height: 30%;
+    width: 100%;
+    background-color: #282828;
+}
+.content{
+    flex: 1;
+    width: 38vw;
+    text-align: center;
+    margin: 0;
+}
+.image{
+    flex: 1;
+    width: 40vw;
+   margin-left:5vw;
+   
+}
+
+h1{
+    font-family: Inter;
+font-size: 2em;
+font-weight: 700;
+color: #282828;
+text-align: left;
+line-height: 1.5em;
+
+}
+.content p{
+    font-family: Inter;
+font-size: 1.3em;
+font-weight: 500;
+line-height: 1.5em;
+text-align: left;
+color: #484848;
+padding: 0.8em 0 0 0;
+}
+h4{
+    font-family: Inter;
+font-size: 1.5em;
+font-weight: 800;
+line-height: 3.5em;
+text-align: left;
+}
+#email{
+    font-family: Inter;
+font-size: 1.2em;
+font-weight: 500;
+text-align: left;
+color: #888888;
+border: 3px solid black;
+border-radius: 0.3em;
+width: 15.5em;
+height:2.3em;
+padding: 0.5em;
+box-sizing: border-box;
+}
+#register{
+    width: 13.5em;
+height: 3.3em;
+border-radius: 0.3em;
+background-color:  #282828;
+color:  white;
+font-weight: 600;
+}
+small{
+    font-family: Inter;
+font-size: 1em;
+font-weight: 500;
+line-height: 1.5em;
+text-align: center;
+color: white;
+margin-left: 2.2em;
+
+}
+.f2{
+    flex: 1;
+    display:flex;
+    justify-content: space-between;
+    margin: 2% 16% 2% 16%;
+    font-family: Inter; 
+}
+    
+.f3{
+
+    justify-content: flex-end;
+}
+li{
+    color: #FFFFFF;
+    font-weight: 50;
+    line-height: 4vh;
+    font-size : 1.1em;
+
+
+}
+.form {
+    text-align: left; 
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .header {
+        padding-left: 5%;
+    }
+    
+    .content {
+        width: 80vw;
+        margin: auto;
+    }
+    
+    .image {
+        width: 80vw;
+        margin: auto;
+    }
+    
+    .f2 {
+        
+        margin: 2% 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    .content p {
+        font-size: 1.1em;
+    }
+    
+    h4 {
+        font-size: 1.3em;
+    }
+    
+    #email {
+        width: 13.5em;
+        height: 2.1em;
+    }
+    
+    #register {
+        width: 12em;
+        height: 3em;
+    }
+    
+    small {
+        font-size: 0.9em;
+        margin-left: 1em;
+    }
+    
+    .f2 {
+        margin: 2% 2%;
+    }
+    
+    
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    
+    .content p {
+        font-size: 1em;
+        text-align: center;
+    }
+    
+    h4 {
+        font-size: 1.2em;
+        text-align: center;
+    }
+   .header{
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+   }
+    
+    #email {
+        width: 12em;
+        height: 2em;
+        text-align: center;
+    }
+    
+    #register {
+        width: 10em;
+        height: 2.5em;
+        text-align: center;
+    }
+    
+    small {
+        font-size: 0.8em;
+        margin-left: 5.5em;
+        text-align: center;
+    }
+    
+    .header, .footer {
+        height: auto;
+        padding: 1em;
+    }
+    
+    .content, .image {
+        width: 90vw;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .f2 {
+        flex-direction: column;
+        margin: 2% 1%;
+        text-align: center;
+    }
+}
+
+
+
+
